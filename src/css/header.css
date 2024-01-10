@@ -1,7 +1,31 @@
-/* .header {
+.header {
+  height: 1041px;
+
+  background-image: url('../img/header-img.jpg'),
+    url('../img/header-img-two.jpg');
+  background-repeat: no-repeat, no-repeat;
+  background-position: left, right;
+  background-size: 50% 100%, 50% 100%;
 }
-.container {
-} */
+
+@media (max-width: 1400px) {
+  .header {
+    background-image: url('../img/header-img.jpg'),
+      url('../img/header-img-two.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left, right;
+    background-size: 40% 100%, 60% 100%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .header {
+    background-image: url('../img/header-img.jpg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+  }
+}
 
 .header__container {
   display: flex;
@@ -11,6 +35,12 @@
   padding-left: 194px;
   padding-right: 194px;
 }
+@media (max-width: 1400px) {
+  .header__container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
 
 .header__wrapper {
   display: flex;
@@ -19,10 +49,76 @@
   align-items: center;
   gap: 65px;
 }
-/* .header__logo {
+@media (max-width: 1250px) {
+  .header__wrapper {
+    gap: 30px;
+  }
 }
-.header__nav {
-} */
+
+.header__link {
+  color: var(--main-white-text-color);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__link:hover {
+  color: var(--main-color);
+}
+@media (max-width: 1400px) {
+  .header__link {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .header__link {
+    font-size: 24px;
+  }
+}
+
+.header__button {
+  color: var(--main-white-text-color);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+
+  width: 150px;
+  height: 50px;
+
+  background-color: transparent;
+  border-radius: 50px;
+  border: 1px solid #fff;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__button:hover {
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+
+@media (max-width: 1400px) {
+  .header__button {
+    font-size: 20px;
+    width: 160px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .header__button {
+    font-size: 24px;
+    width: 170px;
+    height: 70px;
+  }
+}
+
 .header__navlist {
   display: flex;
   flex-direction: row;
@@ -30,7 +126,9 @@
   align-items: center;
   gap: 80px;
 }
-/* .header__listitem {
+@media (max-width: 1250px) {
+  .header__navlist {
+    gap: 30px;
+  }
 }
-.header__button {
-} */
+/* ===========1080px BURGER */
