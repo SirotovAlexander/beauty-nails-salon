@@ -1,0 +1,36 @@
+/* .header {
+}
+.container {
+} */
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 194px;
+  padding-right: 194px;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 65px;
+}
+/* .header__logo {
+}
+.header__nav {
+} */
+.header__navlist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+/* .header__listitem {
+}
+.header__button {
+} */

@@ -1,4 +1,6 @@
 @import url('./reset.css');
+@import url('./global.css');
+@import url('./header.css');
 
 :root {
   --main-color: #d8b192;
