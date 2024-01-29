@@ -3,6 +3,7 @@
 @import url('./header.css');
 @import url('./hero.css');
 @import url('./our-section.css');
+@import url('./price.css');
 
 :root {
   --main-color: #d8b192;
