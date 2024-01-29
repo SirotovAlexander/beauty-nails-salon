@@ -14,7 +14,7 @@
       referrerpolicy="no-referrer"
     />
     <script type="module" crossorigin src="/beauty-nails-salon/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/beauty-nails-salon/assets/index-29f2b225.css">
+    <link rel="stylesheet" href="/beauty-nails-salon/assets/index-280a6395.css">
   </head>
   <body>
     <header class="header">
@@ -214,13 +214,19 @@ noopener"
 </section>
 
       <section class="contacts">
-  <div class="container">
-    <img src="../img/contact-section.jpg" alt="nails" />
-    <h2>Contact Our Salon</h2>
-    <p>give us a call to schedule a treatment (123) 675 5656</p>
-    <!-- CHECK -->
-    <input type="text" name="name" id="name" required />
-    <input type="submit" value="Submit" />
+  <div class="container contacts__wrapper">
+    <div class="contacts__img_wrapper">
+      <img src="../img/contact-section.jpg" alt="nails" />
+    </div>
+    <div class="contacts-form__wrapper">
+      <h2>Contact Our Salon</h2>
+      <p>give us a call to schedule a treatment (123) 675 5656</p>
+      <!-- CHECK -->
+      <form name="callback__form" autocomplete="on" novalidate>
+        <input type="email" name="email" placeholder="Enter email address" />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   </div>
 </section>
 
