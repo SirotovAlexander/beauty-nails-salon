@@ -1,0 +1,22 @@
+.promo {
+  background-color: var(--main-background-color);
+}
+
+.img__board {
+  /* width: 100vw;
+  display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+
+  grid-template-columns: 384px 384px 384px 384px 384px;
+
+  grid-template-rows: 450px 450px;
+}
+.pormo__img-wrapper {
+  /* width: 388px; */
+  height: 450px;
+}
+.promo__img {
+  width: 100%;
+  height: 100%;
+}
