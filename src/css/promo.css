@@ -1,19 +1,15 @@
 .promo {
+  height: 900px;
   background-color: var(--main-background-color);
 }
 
 .img__board {
-  /* width: 100vw;
+  width: 100vw;
   display: flex;
-  flex-wrap: wrap; */
-  display: grid;
-
-  grid-template-columns: 384px 384px 384px 384px 384px;
-
-  grid-template-rows: 450px 450px;
+  flex-wrap: wrap;
 }
 .pormo__img-wrapper {
-  /* width: 388px; */
+  width: 388px;
   height: 450px;
 }
 .promo__img {
