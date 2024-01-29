@@ -34,6 +34,7 @@
   align-items: center;
   padding-left: 194px;
   padding-right: 194px;
+  padding-top: 58px;
 }
 @media (max-width: 1400px) {
   .header__container {
@@ -132,3 +133,11 @@
   }
 }
 /* ===========980px BURGER */
+.header__logo-sec {
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
