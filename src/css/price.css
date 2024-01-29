@@ -24,6 +24,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  gap: 100px;
 }
 
 .price-section__box {
@@ -83,6 +84,14 @@
   height: 704px;
   width: 766px;
 }
+
+@media (max-width: 1400px) {
+  .price-img__box {
+    height: 504px;
+    width: 566px;
+  }
+}
+
 .price-section__img {
   height: 100%;
   width: 100%;
