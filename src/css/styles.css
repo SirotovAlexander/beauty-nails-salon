@@ -5,6 +5,7 @@
 @import url('./our-section.css');
 @import url('./price.css');
 @import url('./promo.css');
+@import url('./contact-section.css');
 
 :root {
   --main-color: #d8b192;
