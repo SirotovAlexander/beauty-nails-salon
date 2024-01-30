@@ -19,6 +19,11 @@
   }
 }
 
+@media (max-width: 980px) {
+  .price-section {
+    padding-bottom: 0;
+  }
+}
 .price-section__wrapper {
   display: flex;
   flex-direction: row;
