@@ -175,3 +175,9 @@
   line-height: normal;
   text-transform: uppercase;
 }
+
+@media (max-width: 360px) {
+  .header__logo-sec {
+    font-size: 30px;
+  }
+}

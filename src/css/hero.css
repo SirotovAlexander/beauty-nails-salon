@@ -27,6 +27,15 @@
   align-items: center;
   gap: 220px;
 }
+@media (max-width: 1400px) {
+  .hero__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 220px;
+  }
+}
 
 .hero__item {
   display: flex;
