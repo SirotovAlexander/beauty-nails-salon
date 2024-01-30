@@ -14,14 +14,11 @@
       referrerpolicy="no-referrer"
     />
     <script type="module" crossorigin src="/beauty-nails-salon/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/beauty-nails-salon/assets/index-280a6395.css">
+    <link rel="stylesheet" href="/beauty-nails-salon/assets/index-47dbcbf3.css">
   </head>
   <body>
     <header class="header">
   <div class="container header__container">
-    <!-- <svg class="header__logo">
-      <use href="../img/symbol-defs.svg#icon-main-logo"></use>
-    </svg> -->
     <p class="header__logo-sec">nails.tatty.od</p>
     <div class="header__wrapper">
       <nav class="header__nav">
@@ -89,27 +86,13 @@
 
       <section class="our-section">
   <div class="container our-section__wrapper">
-    <!-- Check img heights/widths -->
-    <!-- 
-    <div class="our-section__img-wrapper"> -->
-    <!-- <img
-        src="../img/svg-two.svg"
-        class="our-section__first-img"
-        height="490"
-        alt="abstraction"
-      /> -->
     <img
       src="../img/oursection-img.jpg"
       class="our-section__second-img"
       height="704"
       alt="nails"
     />
-    <!-- <img
-        src="../img/svg-one.svg"
-        class="our-section__third-img"
-        height="468"
-        alt="abstraction"
-      /> -->
+
     <div class="img-fix">
       <img
         src="../img/oursection-img-two.jpg"
@@ -119,7 +102,6 @@
         alt="nails"
       />
     </div>
-    <!-- </div> -->
 
     <div class="our-section__textWrapper">
       <h2 class="our-section__title">Our Story</h2>
@@ -216,15 +198,21 @@ noopener"
       <section class="contacts">
   <div class="container contacts__wrapper">
     <div class="contacts__img_wrapper">
-      <img src="../img/contact-section.jpg" alt="nails" />
+      <img src="../img/contact-section.jpg" alt="nails" class="contact__img" />
     </div>
     <div class="contacts-form__wrapper">
-      <h2>Contact Our Salon</h2>
-      <p>give us a call to schedule a treatment (123) 675 5656</p>
-      <!-- CHECK -->
-      <form name="callback__form" autocomplete="on" novalidate>
-        <input type="email" name="email" placeholder="Enter email address" />
-        <button type="submit">Submit</button>
+      <h2 class="contact-form__title">Contact Our Salon</h2>
+      <p class="contact-form__text">give us a call to schedule a treatment</p>
+      <p class="contact-form__text contact-form__text_fix">(123) 675 5656</p>
+
+      <form name="callback" autocomplete="on" novalidate class="callback__form">
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter email address"
+          class="form_input"
+        />
+        <button type="submit" class="form_submite">Subscribe</button>
       </form>
     </div>
   </div>
@@ -233,18 +221,13 @@ noopener"
     </main>
     <footer class="footer">
   <div class="container">
-    <svg class="footer__logo">
-      <use href="../img/symbol-defs.svg#icon-main-logo"></use>
-    </svg>
-    <nav class="footer__nav">
-      <p>Menu</p>
-      <ul class="footer__navlist">
-        <li class="footer__listitem"><a href="#">Home</a></li>
-        <li class="footer__listitem"><a href="#">About</a></li>
-        <li class="footer__listitem"><a href="#">Products</a></li>
-        <li class="footer__listitem"><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+    <p>Menu</p>
+    <ul class="footer__navlist">
+      <li class="footer__listitem"><a href="#">Home</a></li>
+      <li class="footer__listitem"><a href="#">About</a></li>
+      <li class="footer__listitem"><a href="#">Products</a></li>
+      <li class="footer__listitem"><a href="#">Contact</a></li>
+    </ul>
     <ul class="footer__contacts-list">
       <li class="footer__contacts-item">mail</li>
       <li class="footer__contacts-item">phone</li>
@@ -253,7 +236,6 @@ noopener"
     </ul>
   </div>
 </footer>
-
 
     
   </body>
