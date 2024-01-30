@@ -27,6 +27,15 @@
   gap: 100px;
 }
 
+@media (max-width: 980px) {
+  .price-section__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .price-section__box {
   max-width: 590px;
 }
@@ -89,6 +98,12 @@
   .price-img__box {
     height: 504px;
     width: 566px;
+  }
+}
+
+@media (max-width: 980px) {
+  .price-img__box {
+    display: none;
   }
 }
 
