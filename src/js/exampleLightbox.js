@@ -2,9 +2,11 @@ import * as basicLightbox from 'basiclightbox';
 const modalBtn = document.querySelector('.header__button');
 
 modalBtn.addEventListener('click', openModal);
-const instance = basicLightbox.create(`
+const instance = basicLightbox.create(
+  `
 <div
   style="
+    max-width: 1200px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -21,9 +23,24 @@ const instance = basicLightbox.create(`
   <img src="./img/ex6.jpg" width="300" height="400" alt="example" />
   <img src="./img/ex7.jpg" width="300" height="400" alt="example" />
 </div>
-`);
+`,
+  {
+    onShow: instance => {
+      window.addEventListener('keydown', onEscKeyPress);
+    },
+    onClose: instance => {
+      window.removeEventListener('keydown', onEscKeyPress);
+    },
+  }
+);
 
 function openModal(event) {
   instance.show();
-  console.log(event.target);
+  const box = document.querySelector('.basicLightbox');
+  box.addEventListener('click', () => instance.close());
+}
+
+function onEscKeyPress(e) {
+  if (e.code !== 'Escape') return;
+  instance.close();
 }
