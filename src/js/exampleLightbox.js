@@ -1,7 +1,29 @@
+import * as basicLightbox from 'basiclightbox';
 const modalBtn = document.querySelector('.header__button');
 
 modalBtn.addEventListener('click', openModal);
+const instance = basicLightbox.create(`
+<div
+  style="
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 50px 0 50px;
+  "
+>
+  <img src="./img/ex2.jpg" width="300" height="400" alt="example" />
+  <img src="./img/ex3.jpg" width="300" height="400" alt="example" />
+  <img src="./img/ex4.jpg" width="300" height="400" alt="example" />
+  <img src="./img/ex5.jpg" width="300" height="400" alt="example" />
+  <img src="./img/ex6.jpg" width="300" height="400" alt="example" />
+  <img src="./img/ex7.jpg" width="300" height="400" alt="example" />
+</div>
+`);
 
 function openModal(event) {
+  instance.show();
   console.log(event.target);
 }
