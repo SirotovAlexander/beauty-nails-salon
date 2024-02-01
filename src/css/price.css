@@ -116,3 +116,6 @@
   height: 100%;
   width: 100%;
 }
+.flex-box-fix {
+  width: 300px;
+}
