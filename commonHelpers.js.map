@@ -1,1 +1,1 @@
-{"version":3,"file":"commonHelpers.js","sources":["../src/js/exampleLightbox.js"],"sourcesContent":["const modalBtn = document.querySelector('.header__button');\n\nmodalBtn.addEventListener('click', openModal);\n\nfunction openModal(event) {\n  console.log(event.target);\n}\n"],"names":["modalBtn","openModal","event"],"mappings":"ssBAAA,MAAMA,EAAW,SAAS,cAAc,iBAAiB,EAEzDA,EAAS,iBAAiB,QAASC,CAAS,EAE5C,SAASA,EAAUC,EAAO,CACxB,QAAQ,IAAIA,EAAM,MAAM,CAC1B"}
+{"version":3,"file":"commonHelpers.js","sources":[],"sourcesContent":[],"names":[],"mappings":""}
