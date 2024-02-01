@@ -8,6 +8,10 @@
 @import url('./contact-section.css');
 @import url('./footer.css');
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --main-color: #d8b192;
   --main-text-color: #767676;
