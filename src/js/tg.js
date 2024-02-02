@@ -2,8 +2,8 @@ import axios from 'axios';
 
 const callbackForm = document.querySelector('.callback__form');
 
-const TOKEN = '6755016444:AAE9QL601cMD22Yv8nzXsELemNX_mJQKASQ';
-const CHAT_ID = '-1002143444314';
+const TOKEN = '';
+const CHAT_ID = '';
 const URL_TG = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
 callbackForm.addEventListener('submit', handleSubmit);
