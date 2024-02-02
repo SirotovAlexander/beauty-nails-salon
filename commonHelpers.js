@@ -18,6 +18,6 @@ import{b as d,a as m}from"./assets/vendor-efc5e510.js";(function(){const n=docum
   <img src="./img/ex6.jpg" width="300" height="400" alt="example" />
   <img src="./img/ex7.jpg" width="300" height="400" alt="example" />
 </div>
-`,{onShow:o=>{window.addEventListener("keydown",a)},onClose:o=>{window.removeEventListener("keydown",a)}});function u(o){c.show(),document.querySelector(".basicLightbox").addEventListener("click",()=>c.close())}function a(o){o.code==="Escape"&&c.close()}const r=document.querySelector(".callback__form"),g="6755016444:AAE9QL601cMD22Yv8nzXsELemNX_mJQKASQ",h="-1002143444314",f=`https://api.telegram.org/bot${g}/sendMessage`;r.addEventListener("submit",x);function x(o){o.preventDefault();let n=`<b>Контактна інформація з сайту</b> 
+`,{onShow:o=>{window.addEventListener("keydown",a)},onClose:o=>{window.removeEventListener("keydown",a)}});function u(o){c.show(),document.querySelector(".basicLightbox").addEventListener("click",()=>c.close())}function a(o){o.code==="Escape"&&c.close()}const r=document.querySelector(".callback__form"),g="",h="",f=`https://api.telegram.org/bot${g}/sendMessage`;r.addEventListener("submit",x);function x(o){o.preventDefault();let n=`<b>Контактна інформація з сайту</b> 
 `;if(r.phone.value==="")return alert("Введіть коректний номер");n+=`<b>${r.phone.value}</b>`,m.post(f,{chat_id:h,parse_mode:"html",text:n}).then(i=>{alert("Наш менеджер зателефонує Вам! Гарного дня"),r.phone.value=""}).catch(i=>console.warn(i.massege))}
 //# sourceMappingURL=commonHelpers.js.map
